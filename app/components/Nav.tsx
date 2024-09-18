@@ -1,13 +1,30 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Btn from "./utils/Btn";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Nav = () => {
-  const [menuState, setMenuState] = useState(0);
+  const [menuState, setMenuState] = useState(false);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    if (!menuState) {
+      return;
+    }
+
+    const handleCloseMenu = () => {
+      setMenuState(false);
+    };
+
+    document.addEventListener("mousedown", handleCloseMenu);
+
+    return () => {
+      document.removeEventListener("mousedown", handleCloseMenu);
+    };
+  }, [menuState]);
 
   return (
     <nav className="w-full flex-between-center gap-3 bg-decor-gray-light rounded-md px-5 mt-8 sticky top-8 shadow-nav">
@@ -22,6 +39,7 @@ const Nav = () => {
         />
       </div>
       <ul
+        ref={menuRef}
         className={`flex-center-center gap-5 text-xl bg-decor-gray-light lg:bg-transparent nav-mobile ${
           menuState ? "open" : "close"
         }`}
@@ -47,7 +65,7 @@ const Nav = () => {
         <Btn title="احجز الآن" customStyle="md:flex hidden" />
         <button
           className="text-blue-deep lg:hidden inline-block"
-          onClick={() => setMenuState((prev) => (prev ? 0 : 1))}
+          onClick={() => setMenuState(!menuState)}
         >
           <Icon icon="ion:menu" className="w-10 h-10 font-bold text-6xl" />
         </button>
