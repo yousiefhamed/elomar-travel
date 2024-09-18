@@ -7,10 +7,24 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    boxShadow: {
+      btn: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+      nav: "0px 0px 8px 0px rgba(0, 0, 0, 0.25)",
+    },
     colors: {
-      deepBlue: "#003366",
+      blue: { deep: "#0D1321" },
+      green: {
+        dark: "#1D4C4F",
+        light: "#28867E",
+      },
       richGold: "#ffc300",
-      warmSand: "#d2b48c",
+      decor: {
+        gray: {
+          text: "#A0A0A0",
+          light: "#D3DCDE",
+        },
+        sand: "#d2b48c",
+      },
       white: "#ffffff",
     },
   },
