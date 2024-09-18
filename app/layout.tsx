@@ -50,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl">
       <body
-        className={`${tajawal.className} w-full max-w-screen-2xl mx-auto md:px-10 px-5`}
+        className={`${tajawal.className} w-full max-w-[1536px] mx-auto md:px-10 px-5`}
       >
         <Nav />
         <main className="w-full mt-10">{children}</main>
