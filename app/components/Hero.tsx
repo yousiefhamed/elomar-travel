@@ -3,7 +3,7 @@ import Btn from "./utils/Btn";
 
 const Hero = () => {
   return (
-    <section className="w-full grid grid-cols-1 lg:grid-cols-2 xs:gap-10 gap-36 h-svh max-h-[650px] justify-center items-center">
+    <section className="w-full grid grid-cols-1 lg:grid-cols-2 xs:gap-10 gap-36 min-h-svh lg:min-h-fit lg:h-svh lg:max-h-[650px] justify-center items-center">
       <div className="text-right flex flex-col gap-5 justify-center items-start">
         <h1 className="md:text-6xl text-5xl font-bold text-blue-deep leading-[140%]">
           رحلات مخصصة لك بأمان وراحة.
