@@ -19,10 +19,10 @@ const Nav = () => {
       setMenuState(false);
     };
 
-    document.addEventListener("mousedown", handleCloseMenu);
+    document.addEventListener("click", handleCloseMenu);
 
     return () => {
-      document.removeEventListener("mousedown", handleCloseMenu);
+      document.removeEventListener("click", handleCloseMenu);
     };
   }, [menuState]);
 
