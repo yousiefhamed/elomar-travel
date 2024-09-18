@@ -1,3 +1,80 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@layer components {
+  .hover-menu {
+    position: relative;
+  }
+  .hover-menu::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: #ffc300;
+    margin-top: 5px;
+    border-radius: 50%;
+    transition: width 0.3s ease-in-out;
+  }
+  .hover-menu:hover::after {
+    width: 60%;
+  }
+
+  @keyframes show-up {
+    from {
+      transform: translateY(-1000px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes show-down {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-1000px);
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .nav-mobile {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding-block: 1.75rem;
+      margin-top: 0.75rem;
+      flex-direction: column;
+      box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+      transition: transform 0.25s, ease-in-out;
+
+      &.open {
+        transform: translateY(0);
+        animation: show-up 0.3s ease-in-out;
+      }
+
+      &.close {
+        transform: translateY(-1000px);
+        animation: show-down 0.3s ease-in-out;
+      }
+    }
+  }
+}
