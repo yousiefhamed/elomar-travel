@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# El-Omar Travel - Landing Page
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project is a modern, responsive landing page for **El-Omar Travel**, a local travel agency specializing in internal tourism within Egypt. The website is designed to provide Egyptian families, solo travelers, and groups with an easy and trustworthy way to plan their trips to popular destinations within Egypt.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Custom Travel Solutions**: Personalized tours based on customer demand.
+- **User-friendly Booking System**: Easy-to-use booking form to reserve trips.
+- **Highlighted Destinations**: Showcase of Egypt's most popular tourist spots.
+- **Customer Reviews & Testimonials**: Display feedback from satisfied travelers.
+- **Photo Gallery**: A visual guide to the destinations we offer.
+- **Responsive Design**: Fully responsive and optimized for all screen sizes.
+- **Call-to-Action**: Clear CTAs to encourage users to start their journey with El-Omar Travel.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Frontend**: HTML, CSS (Tailwind), JavaScript (typescript), and ShadcnUi.
+- **Design Inspiration**: Custom design based on modern travel websites with Arabic Tajawal typography.
 
-## Learn More
+## Color Scheme
 
-To learn more about Next.js, take a look at the following resources:
+- **Primary Color (Deep Blue)**: `#003366` (Trust, safety, and reliability)
+- **Secondary Color (Rich Gold)**: `#FFC300` (Luxury, comfort, and quality)
+- **Accent Color (Warm Sand)**: `#D2B48C` (Connection to Egyptian landscape)
+- **Neutral Color (White)**: `#FFFFFF` (Simplicity and transparency)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Future Enhancements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Interactive Map**: Add an interactive map of Egypt displaying key tourist destinations.
+- **Multi-language Support**: Support for both Arabic and English users.
+- **Enhanced Booking Flow**: Integrate a payment system and email notifications for confirmed bookings.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Enjoy the beauty of Egypt with El-Omar Travel!**
