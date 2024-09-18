@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 import { Tajawal } from "next/font/google";
+import Nav from "./components/Nav";
 
 const tajawal = Tajawal({
   subsets: ["arabic"],
@@ -47,10 +48,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar">
-      <body className={`${tajawal.className}`}>
-        <nav></nav>
-        {children}
+    <html lang="ar" dir="rtl">
+      <body
+        className={`${tajawal.className} w-full max-w-screen-2xl mx-auto px-10`}
+      >
+        <Nav />
+        <main>{children}</main>
         <footer></footer>
       </body>
     </html>
