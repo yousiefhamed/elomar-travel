@@ -27,7 +27,7 @@ const Nav = () => {
   }, [menuState]);
 
   return (
-    <nav className="w-full flex-between-center gap-3 bg-decor-gray-light rounded-md px-5 mt-8 sticky top-8 shadow-nav">
+    <nav className="w-full flex-between-center gap-3 bg-decor-gray-light rounded-md px-5 mt-8 sticky top-8 shadow-nav z-50">
       <div className="w-60 h-full">
         <Image
           src="/logo.png"
