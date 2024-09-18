@@ -53,7 +53,9 @@ export default function RootLayout({
         className={`${tajawal.className} w-full max-w-[1536px] mx-auto md:px-10 px-5`}
       >
         <Nav />
-        <main className="w-full mt-10">{children}</main>
+        <main className="w-full mt-10 flex-center-center flex-col gap-20">
+          {children}
+        </main>
         <footer></footer>
       </body>
     </html>

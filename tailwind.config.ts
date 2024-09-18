@@ -24,6 +24,7 @@ const config: Config = {
           light: "#D3DCDE",
         },
         sand: "#d2b48c",
+        transparent: "rgba(0, 0, 0, 0.68)",
       },
       white: "#ffffff",
     },
