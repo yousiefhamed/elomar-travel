@@ -1,3 +1,4 @@
+import CTA from "./components/CTA";
 import Destination from "./components/Destination";
 import Hero from "./components/Hero";
 import HowItWorks from "./components/HowItWorks";
@@ -12,6 +13,7 @@ export default function Home() {
       <WhyChooseUs />
       <ValueProposition />
       <HowItWorks />
+      <CTA />
     </>
   );
 }
