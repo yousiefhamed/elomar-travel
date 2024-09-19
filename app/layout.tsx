@@ -3,6 +3,7 @@ import "./globals.css";
 
 import { Tajawal } from "next/font/google";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 const tajawal = Tajawal({
   subsets: ["arabic"],
@@ -56,7 +57,7 @@ export default function RootLayout({
         <main className="w-full mt-10 flex-center-center flex-col gap-20">
           {children}
         </main>
-        <footer></footer>
+        <Footer />
       </body>
     </html>
   );
