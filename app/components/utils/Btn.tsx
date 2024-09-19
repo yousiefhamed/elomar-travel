@@ -12,7 +12,7 @@ const Btn = ({
 }) => {
   return (
     <Link
-      href="https://wa.me/+201208774786?text=مرحبًا، أنا مهتم بحجز رحلة معكم من خلال الموقع الإلكتروني."
+      href="https://wa.me/+201208774786?text=مرحبًا 👋، أنا مهتم بحجز رحلة معكم 🚌✈️ من خلال الموقع الإلكتروني. أود معرفة المزيد من التفاصيل حول الوجهات المتاحة 🌍 وأسعار الرحلات 💰. هل بإمكانكم مساعدتي في حجز رحلتي القادمة؟ 🗺️😊"
       target="_blank"
       rel="noopener noreferrer"
       className={`w-fit flex justify-center items-center gap-3 rounded-xl pr-8 pl-5 py-3 text-xl font-bold text-white bg-green-dark shadow-btn hover:scale-110 transition-transform duration-300 ${customStyle}`}

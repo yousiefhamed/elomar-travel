@@ -75,6 +75,3 @@ const Nav = () => {
 };
 
 export default Nav;
-
-// 01208774786 whatsapp
-// 01019456685 phone
