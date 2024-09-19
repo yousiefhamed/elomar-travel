@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Heading from "./utils/Heading";
+import WhatsappBtn from "./utils/WhatsappBtn";
+import BgScreen from "./utils/BgScreen";
 
 const Destination = () => {
   const cities = [
@@ -38,9 +40,10 @@ const Destination = () => {
   ];
 
   return (
-    <section className="w-full">
+    <section className="w-full flex-center-center flex-col relative">
+      <BgScreen />
       <Heading title="اكتشف وجهتك المفضلة" />
-      <div className="w-full justify-center items-center columns-1 xs:columns-2 md:columns-3 lg:columns-4">
+      <div className="w-full justify-center items-center columns-1 xs:columns-2 md:columns-3 lg:columns-4 mb-10">
         {cities.map((city) => (
           <div
             className="w-full mb-6 relative scale-100 hover:scale-105 transition-transform duration-300"
@@ -59,6 +62,7 @@ const Destination = () => {
           </div>
         ))}
       </div>
+      <WhatsappBtn />
     </section>
   );
 };
