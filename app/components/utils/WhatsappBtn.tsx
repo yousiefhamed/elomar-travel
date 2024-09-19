@@ -3,7 +3,10 @@ import Btn from "./Btn";
 
 const WhatsappBtn = () => {
   return (
-    <div className="relative w-fit hover:scale-110 transition-transform duration-300">
+    <div
+      style={{ marginRight: "calc(64px * 3 /4)" }}
+      className="relative w-fit hover:scale-110 transition-transform duration-300"
+    >
       <Image
         src="/icons/whatsapp3D.png"
         alt="whatsapp3D icon"
