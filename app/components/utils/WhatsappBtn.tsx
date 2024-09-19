@@ -11,7 +11,7 @@ const WhatsappBtn = () => {
         height={97}
         className="absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2 w-16 h-24 transition-transform duration-300 z-40"
       />
-      <Btn title="استفسر الان" customStyle="pr-12 hover:scale-100" />
+      <Btn title="استفسر الان" customStyle="pr-14 pl-8" />
     </div>
   );
 };
