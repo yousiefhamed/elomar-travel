@@ -21,7 +21,7 @@ const config: Config = {
       richGold: "#ffc300",
       decor: {
         gray: {
-          text: "#A0A0A0",
+          text: "rgb(104, 104, 104)",
           light: "#D3DCDE",
         },
         sand: "#d2b48c",
