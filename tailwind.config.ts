@@ -10,6 +10,7 @@ const config: Config = {
     boxShadow: {
       btn: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
       nav: "0px 0px 8px 0px rgba(0, 0, 0, 0.25)",
+      box: "0px 4px 25px 0px rgba(0, 0, 0, 0.05)",
     },
     colors: {
       blue: { deep: "#0D1321" },
