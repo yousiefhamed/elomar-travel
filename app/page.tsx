@@ -1,5 +1,6 @@
 import Destination from "./components/Destination";
 import Hero from "./components/Hero";
+import ValueProposition from "./components/ValueProposition";
 import WhyChooseUs from "./components/WhyChooseUs";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Destination />
       <WhyChooseUs />
+      <ValueProposition />
     </>
   );
 }
